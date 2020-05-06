@@ -36,7 +36,7 @@ public class DAOHelloWorld {
 		DAOHelloWorld.instance = instance;
 	}
 
-	private void readFile() throws IOException {
+	public void readFile() throws IOException {
 		BufferedReader read = new BufferedReader(new InputStreamReader(new FileInputStream(Filename), "UTF-8"));
 		String line = read.readLine();
 		read.close();
@@ -50,6 +50,5 @@ public class DAOHelloWorld {
 	public void setHelloWorldMessage(String helloWorldMessage) {
 		this.helloWorldMessage = helloWorldMessage;
 	}
-	
-	
+		
 }
